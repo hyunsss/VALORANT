@@ -1,10 +1,12 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "Gun.h"
+
 using namespace std;
 
 class Player {
+private:
+
 protected:
 	//STATUS
 	int Health;
@@ -28,8 +30,16 @@ public:
 	}
 	void P_Damage(Player player);
 	void ChoicePlayer(Player* User);
-	
-private:
+
+	/*bool BuyWeapon(Gun* gun) {
+		if (Money > gun->Prize) {
+			Money -= gun->Prize;
+			return true;
+		}
+		
+		cout << "플레이어의 돈이 부족합니다!! 다른 것을 골라주세요" << endl;
+		return false;
+	}*/
 	
 
 };

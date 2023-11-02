@@ -32,11 +32,11 @@ void GameStart(Player* User1, Gun* User1Gun) {
 		{
 		case 1:					// 캐릭터 선택
 			free(User1);
-//			system("cls");
+			//			system("cls");
 			player.ChoicePlayer(User1);
 			break;
 		case 2:					// 무기 선택
-			free(User1Gun);
+			delete User1Gun;
 			system("cls");
 			gun.BuyGun(User1Gun);
 			cout << User1Gun->name;
@@ -53,6 +53,6 @@ void GameStart(Player* User1, Gun* User1Gun) {
 			break;
 		}
 	}
-	
-	
+
+
 }

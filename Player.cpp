@@ -4,7 +4,7 @@
 using namespace std;
 
 void Player::ChoicePlayer(Player* User) {
-	
+
 
 	cout << "캐릭터 선택 창입니다. " << endl;
 	cout << "세이지, 브림스톤, 소바, 피닉스, 제트 " << endl;
@@ -47,8 +47,7 @@ void Player::ChoicePlayer(Player* User) {
 
 void Player::P_Damage(Player player) {
 	cout << "플레이어가 " << player.name << "에게 총을 맞았습니다! " << endl;
-//	cout << "총의 데미지 : " << gun.Damage << endl;
+	//	cout << "총의 데미지 : " << gun.Damage << endl;
 	cout << "현재 체력 : " << Health << endl;
-//	Health -= gun.Damage;
+	//	Health -= gun.Damage;
 }
-
