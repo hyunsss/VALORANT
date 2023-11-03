@@ -29,19 +29,6 @@ public:
 		Assist = 0;
 	}
 	void P_Damage(Player player);
-	void ChoicePlayer(Player* User);
-
-	/*bool BuyWeapon(Gun* gun) {
-		if (Money > gun->Prize) {
-			Money -= gun->Prize;
-			return true;
-		}
-		
-		cout << "플레이어의 돈이 부족합니다!! 다른 것을 골라주세요" << endl;
-		return false;
-	}*/
-	
-
 };
 
 class Sage : public Player {

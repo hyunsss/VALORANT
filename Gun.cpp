@@ -44,56 +44,6 @@ void Gun::Shot() {
 
 }
 
-void Gun::BuyGun(Gun* UserGun) {
-	string Player_choice;
-	//현재 가지고 있는 총 :
-	cout << "게임이 시작되었습니다 ." << endl;
-	cout << "사용하실 총을 골라주세요 ." << endl;
-	cout << "클래식 : 기본 총" << endl;
-	cout << "고스트 : 적당한 총" << endl;
-	cout << "셰리프 : 권총 중엔 탑" << endl;
-	cout << "밴달 : 묵직한 총" << endl;
-	cout << "팬텀 : 밴달 보단 가벼움" << endl;
-	cout << "오딘 : 무서운 총" << endl;
-	cin >> Player_choice;
-	if (Player_choice == "클래식") {
-		UserGun = new Classic();
-		cout << "플레이어가 " << UserGun->name << "을 구매했습니다!" << endl;
-		return;
-	}
-	else if (Player_choice == "고스트") {
-		UserGun = new Ghost();
-		cout << "플레이어가 " << UserGun->name << "을 구매했습니다!" << endl;
-		return;
-	}
-	else if (Player_choice == "셰리프") {
-		UserGun = new Sheriff();
-		cout << "플레이어가 " << UserGun->name << "을 구매했습니다!" << endl;
-		return;
-	}
-	else if (Player_choice == "팬텀") {
-		UserGun = new Phantom();
-		cout << "플레이어가 " << UserGun->name << "을 구매했습니다!" << endl;
-		return;
-	}
-	else if (Player_choice == "밴달") {
-		UserGun = new Vandal();
-		cout << "플레이어가 " << UserGun->name << "을 구매했습니다!" << endl;
-		return;
-	}
-	else if (Player_choice == "오딘") {
-		UserGun = new Odin();
-		cout << "플레이어가 " << UserGun->name << "을 구매했습니다!" << endl;
-		return;
-	}
-	else {
-		cout << "잘못 선택 하셨습니다 다시 골라주세요 !" << endl;
-		BuyGun(UserGun);
-	}
-	
-	return;
-}
-
 void Gun::SellGun(Gun* UserGun) {
 
 	free(UserGun);

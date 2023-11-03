@@ -5,21 +5,20 @@
 using namespace std;
 class Gun
 {
-
+	
 protected:
 	int Prize;
 	int Ammo;
 	int AllAmmo;
-
+	int Damage;
 public:
 	int CurrentAmmo;
 	Gun() {}
 	string name;
-	int Damage;
+
 
 	void Shot();
 	void Reload();
-	void BuyGun(Gun* UserGun);
 	void SellGun(Gun* UserGun);
 	void Attack(Gun* UserGun);
 };
